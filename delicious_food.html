@@ -1,0 +1,154 @@
+                                                                                                                                                                                                                                                                                                                                                                                            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>网页</title>
+    <style>
+        .logo{width:900px;height:100px;margin:0px auto;}
+        .logo_left{width:800px;height:100px;margin:0px;float:left;}
+        .logo_zhong{width:100px;height:100px;float:left;}
+        .time{width:100px;height:50px;font-size:18px;}       
+        .con2{width:300px;height:185px;float:left;}   
+        .hezi1{width:900px;height:30px;margin:0px auto;border:1px solid #808080;}
+        .geshi{width:100px;height:30px;font-size:20px;}
+        .hezi2{width:900px;height:220px;margin:0px auto;}
+        .hezi21{width:225px;height:220px;float:left;}
+        .con_text {width: 450px;height: 220px;float: left;}
+        .con_text h3 {font-size: 20px;font-family: "微软雅黑";color:#F00;text-align:center;}
+        .con_text p {font-size: 15px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+        .hezi22{width:450px;height:220px;float:left;}
+        .hezi23{width:225px;height:220px;float:left;}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo1.jpg" />
+        </div>
+        <div class="logo_zhong">
+            <div class="time">
+                <div id="showtimes">
+                    <script type="text/javascript" language="javascript">
+                        function show_cur_times() {
+                            //获取当前日期
+                            var date_time = new Date();
+                            //定义星期
+                            var week;
+                            //switch判断
+                            switch (date_time.getDay()) {
+                                case 1: week = "星期一"; break;
+                                case 2: week = "星期二"; break;
+                                case 3: week = "星期三"; break;
+                                case 4: week = "星期四"; break;
+                                case 5: week = "星期五"; break;
+                                case 6: week = "星期六"; break;
+                                default: week = "星期天"; break;
+                            }
+
+                            //年
+                            var year = date_time.getFullYear();
+                            //判断小于10，前面补0
+                            if (year < 10) {
+                                year = "0" + year;
+                            }
+
+                            //月
+                            var month = date_time.getMonth() + 1;
+                            //判断小于10，前面补0
+                            if (month < 10) {
+                                month = "0" + month;
+                            }
+
+                            //日
+                            var day = date_time.getDate();
+                            //判断小于10，前面补0
+                            if (day < 10) {
+                                day = "0" + day;
+                            }
+
+                            //时
+                            var hours = date_time.getHours();
+                            //判断小于10，前面补0
+                            if (hours < 10) {
+                                hours = "0" + hours;
+                            }
+
+                            //分
+                            var minutes = date_time.getMinutes();
+                            //判断小于10，前面补0
+                            if (minutes < 10) {
+                                minutes = "0" + minutes;
+                            }
+
+                            //秒
+                            var seconds = date_time.getSeconds();
+                            //判断小于10，前面补0
+                            if (seconds < 10) {
+                                seconds = "0" + seconds;
+                            }
+
+                            //拼接年月日时分秒
+                            var date_str = year + "年" +month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
+
+                            //显示在id为showtimes的容器里
+                            document.getElementById("showtimes").innerHTML = date_str;
+                        }
+
+                        //设置1秒调用一次show_cur_times函数
+                        setInterval("show_cur_times()", 100);
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="daohang" class="w900"> 
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">家乡历史</a></li>
+            <li><a href="beautiful_scenery.html">家乡美景</a></li>
+            <li><a href="famous_person.html">家乡名人</a></li>
+            <li><a href="delicious_food.html">家乡美食</a></li>
+            <li><a href="development.html">家乡发展</a></li>
+        </ul>
+    </div>
+    <div class="hezi2">
+        <div class="hezi21">
+          <img src="images/22.jpg" />
+        </div>
+        <div class="con_text">
+          <h3>临朐全羊</h3>
+          <p>临朐全羊，起源于清代，是在宫廷全羊席的基础上发展起来的。1997年被山东省贸易厅评为“山东名小吃”。“全羊宴”是把羊的躯体和内脏的不同部位，用不同的烹调方法，做出色、形、味、香各异的各种菜肴，虽系全羊，却无羊名。如龙门角、采灵芝、双凤翠等，一只羊做菜80多种。在制作上，刀工精细，调味考究，醇而不腻，具有软料、清淡、口味适中、脆嫩爽鲜等特点。选用羊身各个部分做而成的“全羊汤”，酸辣麻香，清素不膻。用眼、耳、舌、心等做成的明开夜合、迎风扇、迎香草、五福玲珑、八仙过海等菜肴，质脆而嫩，味美形奇，各具特色。</p>
+        </div>
+        <div class="hezi23">
+          <img src="images/23.jpg" />
+        </div>
+    </div>
+    <div class="hezi2">
+        <div class="hezi21">
+          <img src="images/24.jpg" />
+        </div>
+        <div class="con_text">
+          <h3>临朐煎饼</h3>
+          <p>临朐煎饼创制年代无考，明代已成家常便饭。以玉米、高粱、谷子、地瓜干等粗粮为原料，经过粉碎泡糁、磨细成糊、摊于鏊子上边刮边烙，烙熟即成。质地细薄，水分少，耐久储，香酥可口。泰安煎饼分5种：用未发酵磨糊子制作的为甜煎饼；用发酵糊子制作的为酸煎饼；冷却的煎饼再烙酥为酥煎饼;煎饼加葱油或豆腐、白菜等馅烙制的为油煎饼；小米面加白糖烙制的为糖酥煎饼。随着人民的生活好起来，现以小米、面粉、玉米为原料。其特色煎饼为以山楂、小米为原料的山楂煎饼；以柿子、小米、玉米为原料的柿子煎饼。</p>
+        </div>
+        <div class="hezi23">
+          <img src="images/25.jpg" />
+        </div>
+    </div>
+    <div class="hezi2">
+        <div class="hezi21">
+          <img src="images/26.jpg" />
+        </div>
+        <div class="con_text">
+          <h3>临朐全鱼</h3>
+          <p>临朐的全鱼宴，就是以满桌佳肴，清一色的鱼为主料。精选当地优质鲢鱼、鲤鱼，肉质鲜美，营养丰富，含有丰富的蛋白质、无机盐、碳水化合物、脂肪和各种维生素。巨洋湖位于冶源镇海浮山东南，是临朐县唯一的一座集防洪、灌溉、养殖等综合功能于一体的大型水库，湖区野生鱼类丰富。近水的独特地理环境促成了人们不断创新的气质，也孕育出了一种特有的吃鱼方法—— 一鱼多吃。采用炸、煎、炒、炖等多种烹调方法，制作的菜肴形、色、味俱全。用鲜鱼和湖虾，可烹制鱼菜120多种，称为“全鱼宴”。</p>
+        </div>
+        <div class="hezi23">
+          <img src="images/27.jpg" />
+        </div>
+    </div>
+</body>
+</html>
+

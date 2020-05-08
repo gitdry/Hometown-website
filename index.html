@@ -1,0 +1,328 @@
+﻿                                                                                                                                                                                                                                                                                                                                                                                            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>网页</title>
+    <style>
+        .logo{width:900px;height:100px;margin:0px auto;}
+        .logo_left{width:800px;height:100px;margin:0px;float:left;}
+        .logo_zhong{width:100px;height:100px;float:left;}
+        .time{width:100px;height:50px;font-size:18px;}       
+        .hezi21{width:300px;height:185px;float:left;font-family:微软雅黑;line-height:18px;}
+        .con2{width:300px;height:185px;float:left;}   
+        .hezi1{width:900px;height:30px;margin:0px auto;border:1px solid #808080;}
+        .geshi{width:100px;height:30px;font-size:20px;}
+        .btn1{width:100px;height:30px;float:left;}
+        .btn2{width:100px;height:30px;float:left;}
+        .btn3{width:100px;height:30px;float:left;}
+        .btn4{width:100px;height:30px;float:left;}
+        .btn5{width:100px;height:30px;float:left;}
+        .btn6{width:100px;height:30px;float:left;}
+        .btn7{width:100px;height:30px;float:left;}
+        .btn8{width:100px;height:30px;float:left;}
+        .btn9{width:100px;height:30px;float:left;}
+        .hezi2{width:901px;height:185px;margin:10px auto;}
+        .xinwen{width:300px;height:185px;font-size:50px;}
+        .btn11{width:300px;height:185px;float:left;}
+        .shuju{width:300px;height:185px;font-size:50px;}
+        .con{width: 600px;height: 185px;float:left;overflow: hidden;position: relative;}
+        .content{width:600px;height:185px;float:left;}
+        .con_img {width: 300px;height: 185px;float: left;}
+        .con_text {width: 280px;height: 185px;float: right;}
+        .con_text h3 {font-size: 20px;font-family: "微软雅黑";}
+        .con_text p {font-size: 15px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+        .jian1 {position: absolute;left: 0px;top: 75px;}
+        .jian2 {position: absolute;right: 0px;top: 75px;}
+        .hezi3{width:900px;height:185px;margin:0px auto;}
+        .hezi31{width:145px;height:185px;float:left;}
+        .hezi33{width:145px;height:185px;float:right;}
+        .hezi331{width:145px;height:92px;}
+        .hezi332{width:145px;height:92px;}
+        .hezi4{width:910px;height:90px;margin:5px auto;}
+        .hezi41{width:200px;height:90px;float:left;}
+        .hezi42{width:700px;height:90px;float:right;}
+        .hezi5{width:910px;height:90px;margin:5px auto;}
+        .hezi5 p {font-size: 18px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+        .rollBox{width: 600px;overflow: hidden;}
+        .rollBox .Cont {width: 600px;overflow: hidden;float: left;}
+        .rollBox .ScrCont {width: 10000000px;}
+        .rollBox #List1, .rollBox #List2 {float: left;}
+        
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo1.jpg" />
+        </div>
+        <div class="logo_zhong">
+            <div class="time">
+                <div id="showtimes">
+                    <script type="text/javascript" language="javascript">
+                        function show_cur_times() {
+                            //获取当前日期
+                            var date_time = new Date();
+                            //定义星期
+                            var week;
+                            //switch判断
+                            switch (date_time.getDay()) {
+                                case 1: week = "星期一"; break;
+                                case 2: week = "星期二"; break;
+                                case 3: week = "星期三"; break;
+                                case 4: week = "星期四"; break;
+                                case 5: week = "星期五"; break;
+                                case 6: week = "星期六"; break;
+                                default: week = "星期天"; break;
+                            }
+
+                            //年
+                            var year = date_time.getFullYear();
+                            //判断小于10，前面补0
+                            if (year < 10) {
+                                year = "0" + year;
+                            }
+
+                            //月
+                            var month = date_time.getMonth() + 1;
+                            //判断小于10，前面补0
+                            if (month < 10) {
+                                month = "0" + month;
+                            }
+
+                            //日
+                            var day = date_time.getDate();
+                            //判断小于10，前面补0
+                            if (day < 10) {
+                                day = "0" + day;
+                            }
+
+                            //时
+                            var hours = date_time.getHours();
+                            //判断小于10，前面补0
+                            if (hours < 10) {
+                                hours = "0" + hours;
+                            }
+
+                            //分
+                            var minutes = date_time.getMinutes();
+                            //判断小于10，前面补0
+                            if (minutes < 10) {
+                                minutes = "0" + minutes;
+                            }
+
+                            //秒
+                            var seconds = date_time.getSeconds();
+                            //判断小于10，前面补0
+                            if (seconds < 10) {
+                                seconds = "0" + seconds;
+                            }
+
+                            //拼接年月日时分秒
+                            var date_str = year + "年" +month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
+
+                            //显示在id为showtimes的容器里
+                            document.getElementById("showtimes").innerHTML = date_str;
+                        }
+
+                        //设置1秒调用一次show_cur_times函数
+                        setInterval("show_cur_times()", 100);
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="daohang" class="w900"> 
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">家乡历史</a></li>
+            <li><a href="beautiful_scenery.html">家乡美景</a></li>
+            <li><a href="famous_person.html">家乡名人</a></li>
+            <li><a href="delicious_food.html">家乡美食</a></li>
+            <li><a href="development.html">家乡发展</a></li>
+        </ul>
+    </div>
+    <div class="hezi1">
+        <div class="btn1">
+            <a href="http://www.linqucmw.com/news.asp?ArtClassID=10">
+                <input type="button" value="新闻" class="geshi" />
+            </a>
+        </div>
+        <div class="btn2">
+            <a href="https://www.chinabidding.cn/dwzb_1789/jjxxw/">
+                <input type="button" value="经济" class="geshi" />
+            </a>
+        </div>
+        <div class="btn3">
+            <a href="http://www.linqu.gov.cn/lqdt/zwyw/201905/t20190531_475076.html">
+                <input type="button" value="动态" class="geshi" />
+            </a>
+        </div>
+        <div class="btn4">
+            <a href="http://wang66755.qiyegongqiu.net/">
+                <input type="button" value="科技" class="geshi" />
+            </a>
+        </div>
+        <div class="btn5">
+            <a href="https://v.qq.com/x/page/h08464q9wjh.html">
+                <input type="button" value="视频" class="geshi" />
+            </a>
+        </div>
+        <div class="btn6">
+            <a href="http://www.lqlxs.cn/linqu/hahaha/02.htm">
+                <input type="button" value="图片" class="geshi" />
+            </a>
+        </div>
+        <div class="btn7">
+            <a href="http://www.go007.com/ditu/jiaoyu_weifang/linqu/">
+                <input type="button" value="教育" class="geshi" />
+            </a>
+        </div>
+        <div class="btn8">
+            <a href="http://shop.bytravel.cn/produce/ms/index2599_list.html">
+                <input type="button" value="文化" class="geshi" />
+            </a>
+        </div>
+        <div class="btn9">
+            <a href="http://www.linqujob.com/">
+                <input type="button" value="招聘" class="geshi" />
+            </a>
+        </div>
+    </div>
+    <div class="hezi2">
+        <div class="hezi21">
+            <ul>
+                <li>
+                    <a href="http://www.linqu.gov.cn/lqdt/zwyw/201905/t20190531_475076.html" style="text-decoration:none;color:black">
+                        县委书记顾建华带队赴武汉开展专题招商对接
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linqu.gov.cn/lqdt/tpxw/201905/t20190509_471913.html" style="text-decoration:none;color:black">
+                    国务院“互联网+督查”平台开通 线上了解情况听取建议线下督查整改推动落实
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linqu.gov.cn/lqdt/bmdt/201905/t20190530_474996.html" style="text-decoration:none;color:black">
+                    临朐县新旧动能转换基金项目成功对接
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linqu.gov.cn/lqdt/ksxx/201906/t20190605_475373.html" style="text-decoration:none;color:black">
+                        2019年临朐县公立医院公开招聘工作人员部分招聘计划进行核减的公告
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linqu.gov.cn/lqdt/zwyw/201905/t20190513_472089.html" style="text-decoration:none;color:black">
+                        全县脱贫攻坚工作推进会议召开
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linqu.gov.cn/lqdt/zwyw/201904/t20190412_468525.html" style="text-decoration:none;color:black">
+                        心里程山东（临朐）区域总部经济项目签约仪式举行
+                    </a>
+                </li>
+            </ul>
+        </div>        
+        <div class="con2">            
+            <marquee onmouseover=stop() onmouseout=start() scrollamount=10 loop=infinite desplay="0">
+                <a href="https://baike.baidu.com/item/%E8%80%81%E9%BE%99%E6%B9%BE%E9%A3%8E%E6%99%AF%E5%8C%BA/7324135?fr=aladdin">
+                    <img src="images/3.jpg" />
+                </a>
+                <a href="http://www.linqu.gov.cn/lqdt/tpxw/201904/t20190423_470787.html">
+                    <img src="images/1.jpg" />
+                </a>
+                <a href="hhttp://www.linqu.gov.cn/lqdt/tpxw/201901/t20190125_462108.html">
+                    <img src="images/2.jpg" />
+                </a>
+                <a href="http://www.linqu.gov.cn/lqdt/tpxw/201901/t20190125_462109.html">
+                    <img src="images/5.jpg" />
+                </a>
+            </marquee>
+        </div>
+        <div class="btn11">
+            <video src="images/video.mp4" width="100%" height="100%" controls="controls"></video> 
+        </div>
+    </div>
+    <div class="hezi3">
+        <div class="hezi31">
+            <a href="http://www.lqcujinhui.com/" >
+                <img src="images/122.jpg" />
+            </a>
+        </div>
+        <div class="con">
+            <div class="rollBox">
+                <img src="images/8.jpg" class="jian1" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()" />
+                <img src="images/9.jpg" class="jian2" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" />
+                <div class="Cont" id="ISL_Cont">
+                    <div class="ScrCont">
+                        <div id="List1">
+
+                            <!-- 图片列表 begin -->
+                            <div class="content">
+                                <div class="con_img">
+                                    <img src="images/6.jpg" />
+                                </div>
+                                <div class="con_text">
+                                    <h3>石门坊红叶</h3>
+                                    <p>石门坊红叶是国内五大红叶景观之,齐鲁红叶之冠，石门坊文化底蕴丰厚,摩崖石刻造像众多,佛塔庙宇别具风韵,神奇的自然风光和丰富的人文景观相融合。</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="con_img">
+                                    <img src="images/7.jpg" />
+                                </div>
+                                <div class="con_text">
+                                    <h3>老龙湾风景</h3>
+                                    <p>老龙湾,原名薰冶水,俗名老龙湾,老龙湾内泉计万许,出名的有铸剑池、善息泉、濯马潭、万宝泉等,铸剑池又名薰冶泉,在老龙湾西端,泉水涌流,是主泉之一,传说春秋时欧冶子曾在此铸剑淬火。</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="con_img">
+                                    <img src="images/17.jpg" />
+                                </div>
+                                <div class="con_text">
+                                    <h3>临朐全羊</h3>
+                                    <p>临朐全羊,发展历史悠久。绝美名吃“全羊宴”,在制作上有着200多年的独特地方传统技艺,它早已成为“山东名吃”,省非物质文化遗产项目之一,已获得“中国地理标志证明商标”。</p>
+                                </div>
+                            </div>
+                            <!-- 图片列表 end -->
+
+                        </div>
+                        <div id="List2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hezi33">
+            <div class="hezi331">
+                <a href="http://xxgk.linqu.gov.cn/">
+                    <img src="images/10.jpg" />
+                </a>
+            </div>
+            <div class="hezi332">
+                <a href="http://shop.bytravel.cn/produce/food/index2599_list1.html">
+                    <img src="images/11.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="hezi4">
+        <div class="hezi41">
+            <a href="http://wfrb.wfnews.com.cn/content/20190605/Page01JQ.htm">
+                <img src="images/13.jpg" />
+            </a>
+        </div>
+        <div class="hezi42">
+            <a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gb18030&word=%C1%D9%EB%D4%C3%C0%BE%B0&fr=ala&ala=1&alatpl=adress&pos=0&hs=2&xthttps=111111">
+                <img src="images/14.jpg" />
+            </a>
+        </div>
+    </div>
+    <div class="hezi5">
+        <p>班级：&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;姓名：名字&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;学号：   </p>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

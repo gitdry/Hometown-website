@@ -1,0 +1,151 @@
+                                                                                                                                                                                                                                                                                                                                                                                            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>网页</title>
+    <style>
+        .logo{width:900px;height:100px;margin:0px auto;}
+        .logo_left{width:800px;height:100px;margin:0px;float:left;}
+        .logo_zhong{width:100px;height:100px;float:left;}
+        .time{width:100px;height:50px;font-size:18px;}       
+        .con2{width:300px;height:185px;float:left;}   
+        .hezi1{width:900px;height:30px;margin:0px auto;border:1px solid #808080;}
+        .geshi{width:100px;height:30px;font-size:20px;}
+        .hezi2{width:900px;height:185px;margin:0px auto;}
+        .hezi21{width:225px;height:185px;float:left;}
+        .con_text {width: 225px;height: 185px;float: right;}
+        .con_text h3 {font-size: 20px;font-family: "微软雅黑";}
+        .con_text p {font-size: 15px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+        .hezi22{width:225px;height:185px;float:left;}
+        .hezi23{width:225px;height:185px;float:left;}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo1.jpg" />
+        </div>
+        <div class="logo_zhong">
+            <div class="time">
+                <div id="showtimes">
+                    <script type="text/javascript" language="javascript">
+                        function show_cur_times() {
+                            //获取当前日期
+                            var date_time = new Date();
+                            //定义星期
+                            var week;
+                            //switch判断
+                            switch (date_time.getDay()) {
+                                case 1: week = "星期一"; break;
+                                case 2: week = "星期二"; break;
+                                case 3: week = "星期三"; break;
+                                case 4: week = "星期四"; break;
+                                case 5: week = "星期五"; break;
+                                case 6: week = "星期六"; break;
+                                default: week = "星期天"; break;
+                            }
+
+                            //年
+                            var year = date_time.getFullYear();
+                            //判断小于10，前面补0
+                            if (year < 10) {
+                                year = "0" + year;
+                            }
+
+                            //月
+                            var month = date_time.getMonth() + 1;
+                            //判断小于10，前面补0
+                            if (month < 10) {
+                                month = "0" + month;
+                            }
+
+                            //日
+                            var day = date_time.getDate();
+                            //判断小于10，前面补0
+                            if (day < 10) {
+                                day = "0" + day;
+                            }
+
+                            //时
+                            var hours = date_time.getHours();
+                            //判断小于10，前面补0
+                            if (hours < 10) {
+                                hours = "0" + hours;
+                            }
+
+                            //分
+                            var minutes = date_time.getMinutes();
+                            //判断小于10，前面补0
+                            if (minutes < 10) {
+                                minutes = "0" + minutes;
+                            }
+
+                            //秒
+                            var seconds = date_time.getSeconds();
+                            //判断小于10，前面补0
+                            if (seconds < 10) {
+                                seconds = "0" + seconds;
+                            }
+
+                            //拼接年月日时分秒
+                            var date_str = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
+
+                            //显示在id为showtimes的容器里
+                            document.getElementById("showtimes").innerHTML = date_str;
+                        }
+
+                        //设置1秒调用一次show_cur_times函数
+                        setInterval("show_cur_times()", 100);
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="daohang" class="w900"> 
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">家乡历史</a></li>
+            <li><a href="beautiful_scenery.html">家乡美景</a></li>
+            <li><a href="famous_person.html">家乡名人</a></li>
+            <li><a href="delicious_food.html">家乡美食</a></li>
+            <li><a href="development.html">家乡发展</a></li>
+        </ul>
+    </div>
+    <div class="hezi2">
+        <div class="hezi21">
+          <img src="images/18.jpg" />
+        </div>
+        <div class="hezi22">
+          <h3>粟山</h3>
+          <p>粟山孤耸于村落和林田之中，春草滴露、夏日映翠、秋风染黄、冬裹雪洁，举家徒步又或知己相约，慢步于古朴的石阶、歇息于绿荫之下，让人于繁华的市区体会淳朴的自然。山腰建有怡旷亭，倚停而立，微风拂过，看远处清山碧水，方感叹成仙又何为。</p>
+        </div>
+        <div class="hezi23">
+          <img src="images/19.jpg" />
+        </div>
+        <div class="hezi23">
+          <h3>百丈崖瀑布</h3>
+          <p>百丈崖外壁陡绝，高峭如劈，形半环，东南向。清流如带，怒溅而下，遥望若白练悬 挂，逼视如细雨濛濛。落水击石，水花四溅，如万粒银珠飞崩。崖下巨石如席，足以敷坐观瀑，四周峭壑阴森，松柏凝寒，积雪常至四五月而不消，虽骄阳成盛暑，至此亦感寒气袭骨。</p>
+        </div>
+    </div>
+    <div class="hezi2">
+        <div class="hezi22">
+          <h3>沂山</h3>
+          <p>沂山，旧称东泰山，别名东镇，是沂蒙崇山峻岭主脉，素有“泰山为五岳之尊，沂山为五镇之首”的盛名。左思《齐都赋》云：“神岳造天，唯此足以当之。”明刑部尚书乔宇游沂山后赋诗曰：“平生溪山颇登陟，如此名山初见之。徘徊尽日不忍去，似觉岩壑生春姿。</p>
+        </div>
+        <div class="hezi21">
+          <img src="images/20.jpg" />
+        </div>
+        <div class="hezi23">
+          <h3>弥河</h3>
+          <p>弥河起源于沂山山麓，是县境内的第一水系，也是境内主要的灌溉河流，弥河上游的冶源水库是县内最大的蓄水地，库容量全省前十位。弥河是临朐的母亲河，曲折转流，绕城而过。绿树如阴、蝉鸣鸟叫的夏天是弥河最美的季节，也是人们投身其怀抱最长的时候。</p>
+        </div>
+        <div class="hezi23">
+          <img src="images/21.jpg" />
+        </div>
+    </div>
+    
+</body>
+</html>
+

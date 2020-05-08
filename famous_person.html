@@ -1,0 +1,148 @@
+                                                                                                                                                                                                                                                                                                                                                                                            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>网页</title>
+    <style>
+        .logo{width:900px;height:100px;margin:0px auto;}
+        .logo_left{width:800px;height:100px;margin:0px;float:left;}
+        .logo_zhong{width:100px;height:100px;float:left;}
+        .time{width:100px;height:50px;font-size:18px;}       
+        .con2{width:300px;height:185px;float:left;}  
+        .hezi1{width:900px;height:30px;margin:0px auto;border:1px solid #808080;}
+        .geshi{width:100px;height:30px;font-size:20px;}
+        .hezi2{width:900px;height:185px;margin:0px auto;}
+        .hezi21{width:225px;height:185px;float:left;}
+        .hezicon1{width:300px;height:400px;float:left;}
+        .hezicon2{width:600px;height:400px;float:left;}
+        .con_text {width: 900px;height: 185px;float:left;}
+        .con_text h3 {font-size: 24px;font-family: "楷体";color:#F00;text-align:center;}
+        .con_text p {font-size: 17px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+        .hezi3{width:900px;height:400px;margin:0px auto;}
+        .con_text1 {width: 900px;height: 185px;float:left;}
+        .con_text1 h3 {font-size: 24px;font-family: "楷体";color:#F00;text-align:center;}
+        .con_text1 p {font-size: 17px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo1.jpg" />
+        </div>
+        <div class="logo_zhong">
+            <div class="time">
+                <div id="showtimes">
+                    <script type="text/javascript" language="javascript">
+                        function show_cur_times() {
+                            //获取当前日期
+                            var date_time = new Date();
+                            //定义星期
+                            var week;
+                            //switch判断
+                            switch (date_time.getDay()) {
+                                case 1: week = "星期一"; break;
+                                case 2: week = "星期二"; break;
+                                case 3: week = "星期三"; break;
+                                case 4: week = "星期四"; break;
+                                case 5: week = "星期五"; break;
+                                case 6: week = "星期六"; break;
+                                default: week = "星期天"; break;
+                            }
+
+                            //年
+                            var year = date_time.getFullYear();
+                            //判断小于10，前面补0
+                            if (year < 10) {
+                                year = "0" + year;
+                            }
+
+                            //月
+                            var month = date_time.getMonth() + 1;
+                            //判断小于10，前面补0
+                            if (month < 10) {
+                                month = "0" + month;
+                            }
+
+                            //日
+                            var day = date_time.getDate();
+                            //判断小于10，前面补0
+                            if (day < 10) {
+                                day = "0" + day;
+                            }
+
+                            //时
+                            var hours = date_time.getHours();
+                            //判断小于10，前面补0
+                            if (hours < 10) {
+                                hours = "0" + hours;
+                            }
+
+                            //分
+                            var minutes = date_time.getMinutes();
+                            //判断小于10，前面补0
+                            if (minutes < 10) {
+                                minutes = "0" + minutes;
+                            }
+
+                            //秒
+                            var seconds = date_time.getSeconds();
+                            //判断小于10，前面补0
+                            if (seconds < 10) {
+                                seconds = "0" + seconds;
+                            }
+
+                            //拼接年月日时分秒
+                            var date_str = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
+
+                            //显示在id为showtimes的容器里
+                            document.getElementById("showtimes").innerHTML = date_str;
+                        }
+
+                        //设置1秒调用一次show_cur_times函数
+                        setInterval("show_cur_times()", 100);
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="daohang" class="w900"> 
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">家乡历史</a></li>
+            <li><a href="beautiful_scenery.html">家乡美景</a></li>
+            <li><a href="famous_person.html">家乡名人</a></li>
+            <li><a href="delicious_food.html">家乡美食</a></li>
+            <li><a href="development.html">家乡发展</a></li>
+        </ul>
+    </div>
+    <div class="hezi2">
+        <div class="con_text">
+          <h3>冯惟敏</h3>
+          <p>冯惟敏（1511—1580年），字汝行，自号海浮山人。山东临朐人。明代著名散曲家。有谓冯惟敏之于散曲，“犹词中之有辛弃疾”。（任中敏《散曲概论》）冯惟敏降生在其父冯裕直隶晋州的任所，后，随父由晋州移南京，由南京迁甘肃平凉，由甘肃转贵州石阡，在其青少年时代足迹已漫游大半个中国。冯惟敏天资聪颖，文章又得江山之助，“雅丽宏肆，虽在弱龄，已惊长老。”（《益都县志·冯惟敏传》）明世宗嘉靖十六年（1531年），冯惟敏初次参加乡试，深得督学、著名文学家王慎中的赏识。此后却屡试不第。于是愤于科举制度的腐败，绝意仕进，而隐居高卧。然而，他却并未忘却现实，所以能写出尖锐批判现实吏治的大令《正宫端正好·徐我亭归田》。这种热情决不是一时的感情冲动，却像时时活动的火山，不时形成灼热的岩浆借他的一首首散曲表现出来。这种长久的迸发，形成为他散曲创作的根本主题，并且铸成他粗豪疏放的创作风格。</p>
+        </div>
+    </div>
+    <div class="hezi3">
+        <div class="con_text1">
+          <h3>马愉</h3>
+          <div class="hezicon1">
+            <img src="images/mayu.gif">
+          </div>
+          <div class="hezicon2">
+            <p>马愉(1395—1447年)，字性和，号澹轩，明代山东临朐县朱位村人。其先祖为汉代马援，扶风人(今陕西兴平) ，为伏波将军，助光武帝(刘秀)中兴东汉，故马氏至今尚自称为“伏波世家”或“扶风世家”。永乐十八年（1420）以礼经夺省魁。宣德二年廷对第一，授翰林修撰。正统元年（1436）马愉充经筵讲官，每次进讲，皇上都注目倾听，不久升任侍读学士。正统五年（1440），英宗下诏，命马愉等以本官入内阁，参预机务。不久，马愉又升为礼部右侍郎。马愉端重谨慎，为官门无私谒，从不结党营私。待人处事均以宽厚为要旨，人称之为忠厚长者。他曾奏言：“天下狱久者多瘐死，应派遣-到各地迅速审理，结案。”被英宗采纳。一次有边警，朝廷正要发兵，恰遇敌方使者至，朝臣们都认为应将其-关押，唯独马愉上奏反对：“赏善罚恶，为治之本，波及于善非法；乘人之来执之，不妥。”英宗听后深以为然，便厚待来使。正统十二年（1447），马愉病逝于任上，享年53岁，赠礼部尚书兼学士，谥襄敏。</p>
+          </div>
+          
+        </div>
+    </div>
+    <div class="hezi2">
+        <div class="con_text">
+          <h3>许其亮</h3>
+          <p>许其亮，男，汉族，1950年3月生，山东临朐人，1966年7月入伍，1967年7月加入中国共产党，空军第五航空学校毕业，大专学历。
+现任中共中央政治局委员，中共中央军事委员会副主席，中华人民共和国中央军事委员会副主席，空军上将军衔。担任职务:中共第十四届、十五届中央候补委员，十六届、十七届、十八届中央委员，十八届中央政治局委员。十七届一中全会任中共中央军事委员会委员。第十一届全国人大第一次会议任命为中华人民共和国中央军事委员会委员。十七届七中全会增补为中共中央军事委员会副主席。十八届一中全会任中共中央军事委员会副主席。第十二届全国人大第一次会议任命为中华人民共和国中央军事委员会副主席。</p>
+        </div>
+    </div>
+    
+</body>
+</html>
+

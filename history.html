@@ -1,0 +1,142 @@
+                                                                                                                                                                                                                                                                                                                                                                                            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>网页</title>
+    <style>
+        .logo{width:900px;height:100px;margin:0px auto;}
+        .logo_left{width:800px;height:100px;margin:0px;float:left;}
+        .logo_zhong{width:100px;height:100px;float:left;}
+        .time{width:100px;height:50px;font-size:18px;}       
+        .con2{width:300px;height:185px;float:left;}  
+        .hezi1{width:900px;height:30px;margin:0px auto;border:1px solid #808080;}
+        .geshi{width:100px;height:30px;font-size:20px;}
+        .hezi2{width:900px;height:185px;margin:0px auto;}
+        .hezi21{width:225px;height:185px;float:left;}
+        .hezicon1{width:300px;height:400px;float:left;}
+        .hezicon2{width:600px;height:400px;float:left;}
+        .con_text {width: 900px;height: 185px;float:left;}
+        .con_text h3 {font-size: 24px;font-family: "楷体";color:#F00;text-align:center;}
+        .con_text p {font-size: 17px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+        .hezi3{width:900px;height:400px;margin:0px auto;}
+        .con_text1 {width: 900px;height: 185px;float:left;}
+        .con_text1 h3 {font-size: 24px;font-family: "楷体";color:#F00;text-align:center;}
+        .con_text1 p {font-size: 17px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo1.jpg" />
+        </div>
+        <div class="logo_zhong">
+            <div class="time">
+                <div id="showtimes">
+                    <script type="text/javascript" language="javascript">
+                        function show_cur_times() {
+                            //获取当前日期
+                            var date_time = new Date();
+                            //定义星期
+                            var week;
+                            //switch判断
+                            switch (date_time.getDay()) {
+                                case 1: week = "星期一"; break;
+                                case 2: week = "星期二"; break;
+                                case 3: week = "星期三"; break;
+                                case 4: week = "星期四"; break;
+                                case 5: week = "星期五"; break;
+                                case 6: week = "星期六"; break;
+                                default: week = "星期天"; break;
+                            }
+
+                            //年
+                            var year = date_time.getFullYear();
+                            //判断小于10，前面补0
+                            if (year < 10) {
+                                year = "0" + year;
+                            }
+
+                            //月
+                            var month = date_time.getMonth() + 1;
+                            //判断小于10，前面补0
+                            if (month < 10) {
+                                month = "0" + month;
+                            }
+
+                            //日
+                            var day = date_time.getDate();
+                            //判断小于10，前面补0
+                            if (day < 10) {
+                                day = "0" + day;
+                            }
+
+                            //时
+                            var hours = date_time.getHours();
+                            //判断小于10，前面补0
+                            if (hours < 10) {
+                                hours = "0" + hours;
+                            }
+
+                            //分
+                            var minutes = date_time.getMinutes();
+                            //判断小于10，前面补0
+                            if (minutes < 10) {
+                                minutes = "0" + minutes;
+                            }
+
+                            //秒
+                            var seconds = date_time.getSeconds();
+                            //判断小于10，前面补0
+                            if (seconds < 10) {
+                                seconds = "0" + seconds;
+                            }
+
+                            //拼接年月日时分秒
+                            var date_str = year + "年" + month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
+
+                            //显示在id为showtimes的容器里
+                            document.getElementById("showtimes").innerHTML = date_str;
+                        }
+
+                        //设置1秒调用一次show_cur_times函数
+                        setInterval("show_cur_times()", 100);
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="daohang" class="w900"> 
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">家乡历史</a></li>
+            <li><a href="beautiful_scenery.html">家乡美景</a></li>
+            <li><a href="famous_person.html">家乡名人</a></li>
+            <li><a href="delicious_food.html">家乡美食</a></li>
+            <li><a href="development.html">家乡发展</a></li>
+        </ul>
+    </div>
+    <div class="hezi2">
+        <div class="con_text">
+          <h3>临朐历史</h3>
+          <p>据《竹书纪年》和《齐乘》载，今临朐境少昊世为爽鸠氏、帝尧时代为帝子丹朱、虞夏时期为季萴、商朝为诸侯逄伯陵的封地。
+西周，今临朐境称骈邑，为纪国所辖。 春秋时期，齐国灭纪，骈邑改属齐国。战国时临朐地为"齐之朐邑"。
+秦，今临朐境大部属临淄郡，南部属琅琊郡。
+西汉初，始设临朐县，因县城东临朐山而名。今临朐境内，那时有临朐、朱 虚、临原、按（同校）、缾5县。临朐属齐郡，莽新时改为监朐；朱虚属琅琊郡， 治所在临朐城东南13公里的古城村； 临原亦属琅琊郡，治所在临朐城东北1.5公 里（待考） ，莽新时改为填（镇）夷亭；挍，亦名按亭，治所在朱虚城东6.5公 里，仅存5年即废，属郡不详；缾，属琅琊郡（遗址待考）。
+东汉，今临朐境内仅存临朐和朱虚两县。光武初，复监朐为临朐，并将缾县并入，属青州齐国；将填夷亭并入朱虚县，属青州北海国，治所移至今临朐城东南25公里的城头村。
+三国魏时，境内仍设临朐、朱虚两县。临朐属徐州东莞郡；朱虚属青州城阳 郡。
+晋朝，境内设临朐、朱虚两县，初属琅琊郡，后属徐州东莞郡。惠帝永康元年（300），朱虚改属平昌郡，临朐属高密国。
+南北朝时期，境内设昌国、朱虚、般阳、西安、安平5县。昌国，南朝宋改临朐置，治所在临朐城。般阳，割朱虚西南境置，治所在临朐城东南13公里的西 盘阳村。西安，在昌国县西，治所在临朐城西5公里的西安村。安平，在昌国县 北， 为今临朐北界。以上4县均属齐郡。朱虚，南朝宋属平昌郡，北朝魏改属胶 州。北周时朱虚并入琅琊郡，般阳、西安、安平并入昌国县。
+隋朝， 开皇六年（586）改昌国为逄山县，复设般阳县，属青州。大业初， 改逄山为临朐县，般阳并入临朐，属北海郡。 唐朝初，废临朐，置般阳县。武德五年（622）重设临朐县。武德八年（625） 般阳并入临朐县，属河南道青州。
+五代，沿唐制。
+宋朝，初沿五代制。庆历三年（1043）改属京东东路青州按抚使。
+金代，贞祐四年（1216）析穆陵镇置县。临朐、穆陵两县均属山东东路益都 府。后将穆陵县并入临朐县。 元朝，至元二年（1265）临朐并入益都县。至元十五年（1278）复置临朐县， 属山东东西道宣慰司益都路。
+明、清两代，设临朐县。明时属山东布政使司青州府，清时属山东行省青州 府。
+民国初，废府设道，临朐县属胶东道。民国十四年改属淄青道。民国十七年（1928年）废道，临朐县为省直辖。民国二十七年（1938年）改属山东省第八行政督察区所辖。
+1940年4月，临朐县抗日民主政府成立。1943年9月，共产党领导的临朐县政 府建立，隶属鲁中行政区第四（沂山）专区。1945年10月，原第三专区撤销，第四专区改为第三专区， 临朐亦随之改属第三专区。1948年7月，属鲁中南行政公 署第三（沂山）专区。1949年7月改属昌潍专区。1967年3月改属昌潍地区。1981 年7月， 昌潍地区改名为潍坊地区，临朐县亦改属潍坊地区。1983年10月，潍坊地区改称潍坊市，临朐县又改属潍坊市辖。</p>
+        </div>
+    </div>  
+</body>
+</html>
+

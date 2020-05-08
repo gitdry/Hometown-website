@@ -1,0 +1,142 @@
+                                                                                                                                                                                                                                                                                                                                                                                            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>网页</title>
+    <style>
+        .logo{width:900px;height:100px;margin:0px auto;}
+        .logo_left{width:800px;height:100px;margin:0px;float:left;}
+        .logo_zhong{width:100px;height:100px;float:left;}
+        .time{width:100px;height:50px;font-size:18px;}       
+        .con2{width:300px;height:185px;float:left;}   
+        .hezi1{width:900px;height:30px;margin:0px auto;border:1px solid #808080;}
+        .geshi{width:100px;height:30px;font-size:20px;}
+        .hezi2{width:900px;height:600px;margin:0px auto;}
+        .con_text {width: 900px;height: 600px;float: left;}
+        .con_text h3 {font-size: 20px;font-family: "微软雅黑";color:#F00;text-align:center;}
+        .con_text p {font-size: 15px;font-family: "微软雅黑";line-height: 20px;border-top: 1px solid #ddd;}
+        .hezi3{width:900px;height:100px;margin:0px auto;}
+        .hezi4{width:900px;height:100px;margin:0px auto;}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo1.jpg" />
+        </div>
+        <div class="logo_zhong">
+            <div class="time">
+                <div id="showtimes">
+                    <script type="text/javascript" language="javascript">
+                        function show_cur_times() {
+                            //获取当前日期
+                            var date_time = new Date();
+                            //定义星期
+                            var week;
+                            //switch判断
+                            switch (date_time.getDay()) {
+                                case 1: week = "星期一"; break;
+                                case 2: week = "星期二"; break;
+                                case 3: week = "星期三"; break;
+                                case 4: week = "星期四"; break;
+                                case 5: week = "星期五"; break;
+                                case 6: week = "星期六"; break;
+                                default: week = "星期天"; break;
+                            }
+
+                            //年
+                            var year = date_time.getFullYear();
+                            //判断小于10，前面补0
+                            if (year < 10) {
+                                year = "0" + year;
+                            }
+
+                            //月
+                            var month = date_time.getMonth() + 1;
+                            //判断小于10，前面补0
+                            if (month < 10) {
+                                month = "0" + month;
+                            }
+
+                            //日
+                            var day = date_time.getDate();
+                            //判断小于10，前面补0
+                            if (day < 10) {
+                                day = "0" + day;
+                            }
+
+                            //时
+                            var hours = date_time.getHours();
+                            //判断小于10，前面补0
+                            if (hours < 10) {
+                                hours = "0" + hours;
+                            }
+
+                            //分
+                            var minutes = date_time.getMinutes();
+                            //判断小于10，前面补0
+                            if (minutes < 10) {
+                                minutes = "0" + minutes;
+                            }
+
+                            //秒
+                            var seconds = date_time.getSeconds();
+                            //判断小于10，前面补0
+                            if (seconds < 10) {
+                                seconds = "0" + seconds;
+                            }
+
+                            //拼接年月日时分秒
+                            var date_str = year + "年" +month + "月" + day + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
+
+                            //显示在id为showtimes的容器里
+                            document.getElementById("showtimes").innerHTML = date_str;
+                        }
+
+                        //设置1秒调用一次show_cur_times函数
+                        setInterval("show_cur_times()", 100);
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="daohang" class="w900"> 
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">家乡历史</a></li>
+            <li><a href="beautiful_scenery.html">家乡美景</a></li>
+            <li><a href="famous_person.html">家乡名人</a></li>
+            <li><a href="delicious_food.html">家乡美食</a></li>
+            <li><a href="development.html">家乡发展</a></li>
+        </ul>
+    </div>
+    <div class="hezi3">
+      <img src="images/29.jpg" />
+    </div>
+    <div class="hezi2">
+        <div class="con_text">
+          <h3>临朐发展</h3>
+          <p>2018年，全县上下在县委县政府的坚强领导下，坚持以供给侧结构性改革为主线，以新发展理念、新旧动能转换和实施“四大战略”为统领，认真组织实施“一六三七”思路举措，经济呈现平稳健康发展态势，各项社会事业取得新的进展和突破。经济运行稳中有进。经市统计局审定，全县实现地区生产总值（GDP）305.51亿元，按可比价格计算，同比增长7.0%。其中第一产业增加值35.87亿元，增长2.4%；第二产业增加值122.87亿元，增长5.3%；第三产业增加值146.77亿元，增长10.0%。按常住人口计算，人均生产总值35637元（按年均汇率折算为5385美元），增长6.9%。三次产业比例由13.36:39.50:47.14调整为11.74:40.22:48.04，三产比重提高0.9个百分点。
+
+动能转换全面起势。坚持“大项目带动”战略不动摇，新引进过亿元项目30个，其中过3亿元项目10个、过10亿元项目2个；组织实施“321”重点项目83个，华建高性能特种铝材、伊利乳业扩能、联科新材料二期、志特铝模板、圣鸿高端防盗门等28个项目建成或投产。全县计划投资5000万元以上项目投资规模、完成投资分别增长12.5%、11.0%；过亿元项目投资规模、完成投资分别增长25.7%、29.8%。工业技术改造投资增长17.1%，现代服务业投资增长80.7%，高技术制造投资增长15.0%，装备制造业投资增长63.4%，过剩产能行业投资下降70.8%。高新技术产业产值占规模以上工业总产值比重达56.44%，比上年提高9.19个百分点。
+
+乡村振兴有序开展。制定出台全县乡村振兴实施意见、五年规划、年度计划及考核办法，新建成美丽宜居村庄40个、农村新型社区8个，提升农村社区服务中心20个。九山薰衣草小镇入选国家乡村振兴研究实践基地，蒋峪镇被确定为省乡村振兴“十百千”示范镇。大力推进农业产业结构调整，农业“新六产”加快融合发展，全年新流转土地3万亩，新增设施农业5000亩、新增果品面积2万亩。成功打造省市级知名农产品企业产品品牌、区域公用品牌5个，新增“三品一标”品牌认证18个，新发展农业专业合作社122家，新争创国家级示范合作社3家，省级10家、市级11家。新建家庭农场82家，创建省级示范农场3家、市级9家。完成农村无害化卫生厕所改造任务51424户。
+
+“三大攻坚战”成效显著。全力防范化解重大风险，全年处置不良贷款6.8亿元，银行业不良贷款率控制在1.58%。强化安全生产风险分级管控，认真排查整改问题隐患，安全事故同比下降50.0%。坚持把脱贫攻坚作为重大政治任务和第一民生工程，全县所有建档立卡贫困户已全部达到脱贫条件。全力推进污染防治，全县PM10、PM2.5、SO2浓度分别比上年同期改善9.6%、12.5%和23.9%，中央、省环保督察反馈问题整改顺利推进。
+
+就业创业工作保持良好。全年城镇新增就业6609人，城镇登记失业率2.75%。举办人力资源市场招聘会52场，累计到场企业1186家，提供岗位14835个，达成就业意向1458人。开发公益性岗位360人，落实岗位补贴202万元。高质量举办了全县大学生创新创业大赛，积极参加省市创新创业大赛，我县7人获省市大奖。创业载体建设取得新突破，获批省级创业型街道1处，省级“四型就业社区”4处，市级大学生创业示范平台2处。
+
+市场主体稳步增长。全县各类市场主体户数为52672户，增长13.8%，新登记各类市场主体8656户，增长3.4%。年末全县私营企业12909家，比上年增长20.3%，注册资本532.9亿元，增长41.2%，从业人员16.3万人，增长19.3%；个体工商户36997户，增长12.6%，从业人员9.2万人，增长12.6%；农民专业合作社1946家，增长5.5%，出资总额58.1亿元，增长6.0%。全县非公有经济纳税额18亿元，占全部税收的比重为63.4%。
+
+人口规模不断扩大。全县出生人口9315人，人口出生率为10.1‰，自然增长率为3.5‰，出生人口性别比（女性为100）为102.6。年末全县户籍总户数为300376户，户籍总人口为925567人，其中：男性476791人，女性448776人。据人口抽样调查，年末全县常住人口857839人。</p>
+        </div>
+    </div>
+    <div class="hezi4">
+      <img src="images/28.jpg" />
+    </div>
+    
+</body>
+</html>
+
